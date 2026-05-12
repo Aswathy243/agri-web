@@ -1,0 +1,105 @@
+/* LoginPage.css */
+
+/* Target only the login container specifically */
+.login-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0fff4, #dcfce7);
+}
+
+/* Make sure all classes are specific to login page */
+.login-page-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 2rem;
+}
+
+.login-page-title {
+  color: #166534;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Make input selectors more specific */
+.login-page-card .login-input {
+  width: 100%;
+  padding: 0.875rem;
+  margin-bottom: 1.25rem;
+  border: 2px solid #d1fae5;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.login-page-card .login-input:focus {
+  border-color: #34d399;
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.2);
+  outline: none;
+}
+
+/* Target only buttons inside login card */
+.login-page-card .login-btn {
+  width: 100%;
+  padding: 0.875rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.login-page-card .send-otp-btn {
+  background-color:#15803d;
+  color: white;
+}
+
+.login-page-card .send-otp-btn:hover {
+  background-color: #059669;
+}
+
+.login-page-card .verify-otp-btn {
+  background-color: #059669;
+  color: white;
+}
+
+.login-page-card .verify-otp-btn:hover {
+  background-color: #047857;
+}
+
+/* Make animation specific to login page */
+.login-page-card .otp-input {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .login-page-card {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+  
+  .login-page-title {
+    font-size: 1.5rem;
+  }
+}

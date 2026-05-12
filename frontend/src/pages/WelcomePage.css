@@ -1,0 +1,73 @@
+/* src/pages/WelcomePage.css */
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfccb 100%);
+}
+
+.welcome-content {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.welcome-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  color: #166534;
+  margin-bottom: 1rem;
+}
+
+.welcome-description {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #374151;
+  margin-bottom: 2rem;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.login-button {
+  background-color: #15803d;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #166534;
+}
+
+.register-button {
+  background-color: white;
+  color: #15803d;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  border: 1px solid #15803d;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #dcfce7;
+}
