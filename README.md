@@ -45,7 +45,7 @@ services for citizens and farming communities in Idukki, Kerala.
 ### Installation
 
 # Clone the repository
-git clone https://github.com/yourusername/your-repo-name
+git clone https://github.com/Aswathy243/agri-web
 
 # Go to project directory
 cd agri-web
